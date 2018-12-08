@@ -1,0 +1,35 @@
+.star-rating-container {
+    width: 100%;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.star-rating-container .star-container {
+    color: #cecece;
+    width: 50%;
+    text-align: center;
+}
+.star-rating-container .star-container > i {
+    padding: 1px;
+    transition: all ease-out 100ms;
+}
+.star-rating-container .star-container > i:hover {
+    color: #fcf802;
+}
+.star-rating-container .rating-number {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star-rating-container .rating-number .rank-number {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fafafa;
+    background-color: #007bff;
+}
