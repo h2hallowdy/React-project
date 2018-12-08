@@ -26,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@storybook/addon-info": "^4.0.12",
     "@storybook/react": "^4.0.12",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4"
