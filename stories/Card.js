@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 // import { withInfo } from '@storybook/addon-info';
 import Card from '../src/components/Card';
 
