@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import {
     Container, Row, Col, Card, CardImg, CardText,
-    CardBody, CardTitle, CardSubtitle, Button
+    CardBody, CardTitle, Button
 } from 'reactstrap';
 class Products extends Component {
     constructor(props) {

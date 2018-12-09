@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import StarRating from './components/StarRating';
 // import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
