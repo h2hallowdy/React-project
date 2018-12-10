@@ -7,6 +7,7 @@ import './App.css';
 
 import TopMenu from './components/TopMenu';
 import Products from './pages/Products';
+import Components from './pages/Components';
 const Index = () => <h2>Home</h2>;
 
 
@@ -19,7 +20,7 @@ class App extends Component {
           
           <Route path="/" exact component={Index}></Route>
           <Route path="/products/" exact component={Products}></Route>
-
+          <Route path="/components" exact component={Components}></Route>
         </div>
       </Router>
     );
