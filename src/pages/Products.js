@@ -1,19 +1,38 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import {
     Container, Row, Col, Card, CardImg, CardText,
     CardBody, CardTitle, Button
 } from 'reactstrap';
+
+import Loading from '../components/Loading';
 class Products extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            products: []
+            products: [],
+            loading: true
         };
     }
+
+    componentDidMount() {
+        axios.get('https://v3lw45jx13.sse.codesandbox.io/products').then(res => {
+            this.setState({
+                products: res.data,
+                loading: false
+            });
+        });
+    }
+
     render() {
-        const { products } = this.state;
+        const { products, loading } = this.state;
+        if(loading) {
+            return(
+                <Loading></Loading>
+            );
+        }
         return (
             <Container>
                 <h2>Products</h2>
